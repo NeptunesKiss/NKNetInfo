@@ -1,4 +1,13 @@
+//
+//  NetInfoTests.swift
+//  NetInfo
+//
+//  Created by Travasoni Giuseppe on 26/08/16.
+//
+//
+
 import XCTest
+
 @testable import NetInfo
 
 class NetInfoTests: XCTestCase {
