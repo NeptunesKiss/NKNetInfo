@@ -8,7 +8,6 @@
 
 import CoreFoundation
 import CoreTelephony
-import NetInfo
 import SystemConfiguration.CaptiveNetwork
 
 class NKNetInfo {
