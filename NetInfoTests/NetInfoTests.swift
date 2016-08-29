@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import NetInfo
+@testable import NKNetInfo
 
 class NetInfoTests: XCTestCase {
     
@@ -22,7 +22,7 @@ class NetInfoTests: XCTestCase {
     }
     
     func testInit() {
-        let netInfo = NetInfo()
+        let netInfo = NKNetInfo()
         print(netInfo.MACAddress)
     }
     

@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "______Target_NetInfo"
-               BuildableName = "NetInfo.framework"
-               BlueprintName = "NetInfo"
-               ReferencedContainer = "container:NetInfo.xcodeproj">
+               BuildableName = "NKNKNetInfo.framework"
+               BlueprintName = "NKNKNetInfo"
+               ReferencedContainer = "container:NKNetInfo.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -26,16 +26,17 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      shouldUseLaunchSchemeArgsEnv = "YES">
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      codeCoverageEnabled = "YES">
       <Testables>
          <TestableReference
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "______Target_NetInfoTests"
-               BuildableName = "NetInfoTests.xctest"
-               BlueprintName = "NetInfoTests"
-               ReferencedContainer = "container:NetInfo.xcodeproj">
+               BlueprintIdentifier = "BC4DB9D51D709253000DEB06"
+               BuildableName = "NKNetInfoTests.xctest"
+               BlueprintName = "NKNetInfoTests"
+               ReferencedContainer = "container:NKNetInfo.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -56,9 +57,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "______Target_NetInfo"
-            BuildableName = "NetInfo.framework"
-            BlueprintName = "NetInfo"
-            ReferencedContainer = "container:NetInfo.xcodeproj">
+            BuildableName = "NKNKNetInfo.framework"
+            BlueprintName = "NKNKNetInfo"
+            ReferencedContainer = "container:NKNetInfo.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>

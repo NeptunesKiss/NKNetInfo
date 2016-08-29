@@ -6,10 +6,12 @@
 //
 //
 
+import CoreFoundation
 import CoreTelephony
+import NetInfo
 import SystemConfiguration.CaptiveNetwork
 
-class NetInfo {
+class NKNetInfo {
     var connected: Bool = false
     var wifi: Bool = false
     var behindProxy: Bool = false
@@ -23,33 +25,48 @@ class NetInfo {
         if let reach = Reachability.init() {
             connected = reach.isReachable
             wifi = reach.isReachableViaWiFi
+            setProxyProperties()
+            
             if wifi {
                 setWifiProperties()
-                setProxyProperties()
+            }
+            if connected {
+                radioTecnology = CTTelephonyNetworkInfo().currentRadioAccessTechnology
             }
         }
     }
+}
+
+
+
+extension NKNetInfo {
     
     fileprivate func setWifiProperties() {
         if Platform.isSimulator {
             SSID = "simulator_SSID"
             MACAddress = "simulator_MAC"
         }
-        if let ifs = CNCopySupportedInterfaces() as? Array<CFString> {
-            ifs.forEach({ ifnam in
-                if let info = CNCopyCurrentNetworkInfo(ifnam) as? Dictionary<String, String> {
-                    if let ssid = info["SSID"] {
-                        SSID = ssid
-                    }
-                    if let mac = info["BSSID"] {
-                        MACAddress = mac
+        else {
+            if let interfaces = CNCopySupportedInterfaces() as NSArray? {
+                for interface in interfaces {
+                    if let interfaceInfo = CNCopyCurrentNetworkInfo(interface as! CFString) as NSDictionary? {
+                        SSID = interfaceInfo[kCNNetworkInfoKeySSID as String] as? String
+                        MACAddress = interfaceInfo[kCNNetworkInfoKeyBSSID as String] as? String
                     }
                 }
-            })
+            }
         }
     }
     
     fileprivate func setProxyProperties() {
+        
+        if let proxySettings = CFNetworkCopySystemProxySettings()?.takeRetainedValue() as NSDictionary? {
+            if let proxyPortNumber = proxySettings[kCFNetworkProxiesHTTPPort as String] as? NSNumber {
+                proxyPort = String(describing: proxyPortNumber)
+            }
+            proxyAddress = proxySettings[kCFNetworkProxiesHTTPProxy as String] as? String
+        }
+        behindProxy = (proxyPort != nil && proxyAddress != nil)
         
     }
 }

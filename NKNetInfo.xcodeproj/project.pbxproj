@@ -7,10 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BC4DB9D11D708ACB000DEB06 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4DB9D01D708ACB000DEB06 /* Reachability.swift */; };
 		BC4DB9D91D709253000DEB06 /* NetInfoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4DB9D81D709253000DEB06 /* NetInfoTests.swift */; };
-		BC4DB9DB1D709253000DEB06 /* NetInfo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_NetInfo" /* NetInfo.framework */; };
+		BC4DB9DB1D709253000DEB06 /* NKNKNetInfo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_NetInfo" /* NKNKNetInfo.framework */; };
 		BC4DB9E21D7092DF000DEB06 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4DB9E11D7092DF000DEB06 /* Utils.swift */; };
+		BC8C9B401D7446B1005AA4D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8C9B3F1D7446B1005AA4D5 /* AppDelegate.swift */; };
+		BC8C9B421D7446B1005AA4D5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8C9B411D7446B1005AA4D5 /* ViewController.swift */; };
+		BC8C9B451D7446B1005AA4D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC8C9B431D7446B1005AA4D5 /* Main.storyboard */; };
+		BC8C9B471D7446B1005AA4D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC8C9B461D7446B1005AA4D5 /* Assets.xcassets */; };
+		BC8C9B4A1D7446B1005AA4D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC8C9B481D7446B1005AA4D5 /* LaunchScreen.storyboard */; };
+		BC8C9B541D74497A005AA4D5 /* NetInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Sources/NetInfo.swift /* NetInfo.swift */; };
+		BC8C9B561D74497A005AA4D5 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4DB9E11D7092DF000DEB06 /* Utils.swift */; };
 		__src_cc_ref_Sources/NetInfo.swift /* NetInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Sources/NetInfo.swift /* NetInfo.swift */; };
 /* End PBXBuildFile section */
 
@@ -25,14 +31,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		BC4DB9D01D708ACB000DEB06 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
-		BC4DB9D61D709253000DEB06 /* NetInfoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetInfoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC4DB9D61D709253000DEB06 /* NKNetInfoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NKNetInfoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC4DB9D81D709253000DEB06 /* NetInfoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetInfoTests.swift; sourceTree = "<group>"; };
 		BC4DB9DA1D709253000DEB06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC4DB9E11D7092DF000DEB06 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		BC8C9B3D1D7446B1005AA4D5 /* NKNetInfoTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NKNetInfoTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC8C9B3F1D7446B1005AA4D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BC8C9B411D7446B1005AA4D5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BC8C9B441D7446B1005AA4D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BC8C9B461D7446B1005AA4D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BC8C9B491D7446B1005AA4D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BC8C9B4B1D7446B1005AA4D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		__PBXFileRef_Package.swift /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		__PBXFileRef_Sources/NetInfo.swift /* NetInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetInfo.swift; sourceTree = "<group>"; };
-		"_____Product_NetInfo" /* NetInfo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NetInfo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"_____Product_NetInfo" /* NKNKNetInfo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NKNKNetInfo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,7 +52,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC4DB9DB1D709253000DEB06 /* NetInfo.framework in Frameworks */,
+				BC4DB9DB1D709253000DEB06 /* NKNKNetInfo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC8C9B3A1D7446B1005AA4D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,13 +73,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		BC4DB9D71D709253000DEB06 /* NetInfoTests */ = {
+		BC4DB9D71D709253000DEB06 /* NKNetInfoTests */ = {
 			isa = PBXGroup;
 			children = (
 				BC4DB9D81D709253000DEB06 /* NetInfoTests.swift */,
 				BC4DB9DA1D709253000DEB06 /* Info.plist */,
 			);
+			name = NKNetInfoTests;
 			path = NetInfoTests;
+			sourceTree = "<group>";
+		};
+		BC8C9B3E1D7446B1005AA4D5 /* NKNetInfoTestApp */ = {
+			isa = PBXGroup;
+			children = (
+				BC8C9B3F1D7446B1005AA4D5 /* AppDelegate.swift */,
+				BC8C9B411D7446B1005AA4D5 /* ViewController.swift */,
+				BC8C9B431D7446B1005AA4D5 /* Main.storyboard */,
+				BC8C9B461D7446B1005AA4D5 /* Assets.xcassets */,
+				BC8C9B481D7446B1005AA4D5 /* LaunchScreen.storyboard */,
+				BC8C9B4B1D7446B1005AA4D5 /* Info.plist */,
+			);
+			name = NKNetInfoTestApp;
+			path = NetInfoTestApp;
 			sourceTree = "<group>";
 		};
 		TestProducts_ /* Tests */ = {
@@ -75,7 +109,8 @@
 			children = (
 				__PBXFileRef_Package.swift /* Package.swift */,
 				"_____Sources_" /* Sources */,
-				BC4DB9D71D709253000DEB06 /* NetInfoTests */,
+				BC4DB9D71D709253000DEB06 /* NKNetInfoTests */,
+				BC8C9B3E1D7446B1005AA4D5 /* NKNetInfoTestApp */,
 				"____Products_" /* Products */,
 			);
 			sourceTree = "<group>";
@@ -84,8 +119,9 @@
 			isa = PBXGroup;
 			children = (
 				TestProducts_ /* Tests */,
-				"_____Product_NetInfo" /* NetInfo.framework */,
-				BC4DB9D61D709253000DEB06 /* NetInfoTests.xctest */,
+				"_____Product_NetInfo" /* NKNKNetInfo.framework */,
+				BC4DB9D61D709253000DEB06 /* NKNetInfoTests.xctest */,
+				BC8C9B3D1D7446B1005AA4D5 /* NKNetInfoTestApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -93,28 +129,27 @@
 		"_____Sources_" /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				"_______Group_NetInfo" /* NetInfo */,
+				"_______Group_NetInfo" /* NKNetInfo */,
 			);
 			name = Sources;
 			sourceTree = "<group>";
 		};
-		"_______Group_NetInfo" /* NetInfo */ = {
+		"_______Group_NetInfo" /* NKNetInfo */ = {
 			isa = PBXGroup;
 			children = (
 				__PBXFileRef_Sources/NetInfo.swift /* NetInfo.swift */,
-				BC4DB9D01D708ACB000DEB06 /* Reachability.swift */,
 				BC4DB9E11D7092DF000DEB06 /* Utils.swift */,
 			);
-			name = NetInfo;
+			name = NKNetInfo;
 			path = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		BC4DB9D51D709253000DEB06 /* NetInfoTests */ = {
+		BC4DB9D51D709253000DEB06 /* NKNetInfoTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BC4DB9DE1D709253000DEB06 /* Build configuration list for PBXNativeTarget "NetInfoTests" */;
+			buildConfigurationList = BC4DB9DE1D709253000DEB06 /* Build configuration list for PBXNativeTarget "NKNetInfoTests" */;
 			buildPhases = (
 				BC4DB9D21D709253000DEB06 /* Sources */,
 				BC4DB9D31D709253000DEB06 /* Frameworks */,
@@ -125,14 +160,31 @@
 			dependencies = (
 				BC4DB9DD1D709253000DEB06 /* PBXTargetDependency */,
 			);
-			name = NetInfoTests;
+			name = NKNetInfoTests;
 			productName = NetInfoTests;
-			productReference = BC4DB9D61D709253000DEB06 /* NetInfoTests.xctest */;
+			productReference = BC4DB9D61D709253000DEB06 /* NKNetInfoTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		"______Target_NetInfo" /* NetInfo */ = {
+		BC8C9B3C1D7446B1005AA4D5 /* NKNetInfoTestApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = "_______Confs_NetInfo" /* Build configuration list for PBXNativeTarget "NetInfo" */;
+			buildConfigurationList = BC8C9B4E1D7446B1005AA4D5 /* Build configuration list for PBXNativeTarget "NKNetInfoTestApp" */;
+			buildPhases = (
+				BC8C9B391D7446B1005AA4D5 /* Sources */,
+				BC8C9B3A1D7446B1005AA4D5 /* Frameworks */,
+				BC8C9B3B1D7446B1005AA4D5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NKNetInfoTestApp;
+			productName = NetInfoTestApp;
+			productReference = BC8C9B3D1D7446B1005AA4D5 /* NKNetInfoTestApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		"______Target_NetInfo" /* NKNKNetInfo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = "_______Confs_NetInfo" /* Build configuration list for PBXNativeTarget "NKNKNetInfo" */;
 			buildPhases = (
 				CompilePhase_NetInfo /* Sources */,
 				"___LinkPhase_NetInfo" /* Frameworks */,
@@ -141,9 +193,9 @@
 			);
 			dependencies = (
 			);
-			name = NetInfo;
+			name = NKNKNetInfo;
 			productName = NetInfo;
-			productReference = "_____Product_NetInfo" /* NetInfo.framework */;
+			productReference = "_____Product_NetInfo" /* NKNKNetInfo.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -152,29 +204,38 @@
 		__RootObject_ /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = NK;
 				LastSwiftUpdateCheck = 0800;
 				LastUpgradeCheck = 9999;
+				ORGANIZATIONNAME = NeptunesKiss;
 				TargetAttributes = {
 					BC4DB9D51D709253000DEB06 = {
 						CreatedOnToolsVersion = 8.0;
 						ProvisioningStyle = Automatic;
 					};
+					BC8C9B3C1D7446B1005AA4D5 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = G6W7HL5NXX;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
-			buildConfigurationList = "___RootConfs_" /* Build configuration list for PBXProject "NetInfo" */;
+			buildConfigurationList = "___RootConfs_" /* Build configuration list for PBXProject "NKNetInfo" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = "___RootGroup_";
 			productRefGroup = "____Products_" /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				"______Target_NetInfo" /* NetInfo */,
-				BC4DB9D51D709253000DEB06 /* NetInfoTests */,
+				"______Target_NetInfo" /* NKNKNetInfo */,
+				BC4DB9D51D709253000DEB06 /* NKNetInfoTests */,
+				BC8C9B3C1D7446B1005AA4D5 /* NKNetInfoTestApp */,
 			);
 		};
 /* End PBXProject section */
@@ -184,6 +245,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC8C9B3B1D7446B1005AA4D5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC8C9B4A1D7446B1005AA4D5 /* LaunchScreen.storyboard in Resources */,
+				BC8C9B471D7446B1005AA4D5 /* Assets.xcassets in Resources */,
+				BC8C9B451D7446B1005AA4D5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,11 +269,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BC8C9B391D7446B1005AA4D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC8C9B561D74497A005AA4D5 /* Utils.swift in Sources */,
+				BC8C9B421D7446B1005AA4D5 /* ViewController.swift in Sources */,
+				BC8C9B401D7446B1005AA4D5 /* AppDelegate.swift in Sources */,
+				BC8C9B541D74497A005AA4D5 /* NetInfo.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CompilePhase_NetInfo /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				BC4DB9D11D708ACB000DEB06 /* Reachability.swift in Sources */,
 				__src_cc_ref_Sources/NetInfo.swift /* NetInfo.swift in Sources */,
 				BC4DB9E21D7092DF000DEB06 /* Utils.swift in Sources */,
 			);
@@ -213,10 +294,29 @@
 /* Begin PBXTargetDependency section */
 		BC4DB9DD1D709253000DEB06 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = "______Target_NetInfo" /* NetInfo */;
+			target = "______Target_NetInfo" /* NKNKNetInfo */;
 			targetProxy = BC4DB9DC1D709253000DEB06 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BC8C9B431D7446B1005AA4D5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC8C9B441D7446B1005AA4D5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BC8C9B481D7446B1005AA4D5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC8C9B491D7446B1005AA4D5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		BC4DB9DF1D709253000DEB06 /* Debug */ = {
@@ -320,16 +420,123 @@
 			};
 			name = Release;
 		};
+		BC8C9B4C1D7446B1005AA4D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = G6W7HL5NXX;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = NetInfoTestApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.netinfo.NetInfoTestApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BC8C9B4D1D7446B1005AA4D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = G6W7HL5NXX;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = NetInfoTestApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.netinfo.NetInfoTestApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		_ReleaseConf_NetInfo /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
-				INFOPLIST_FILE = NetInfo.xcodeproj/NetInfo_Info.plist;
+				INFOPLIST_FILE = NKNetInfo.xcodeproj/NetInfo_Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = NetInfo;
+				PRODUCT_BUNDLE_IDENTIFIER = NKNetInfo;
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos10.0;
@@ -343,11 +550,11 @@
 			buildSettings = {
 				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
-				INFOPLIST_FILE = NetInfo.xcodeproj/NetInfo_Info.plist;
+				INFOPLIST_FILE = NKNetInfo.xcodeproj/NetInfo_Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = NetInfo;
+				PRODUCT_BUNDLE_IDENTIFIER = NKNetInfo;
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos10.0;
@@ -378,15 +585,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		BC4DB9DE1D709253000DEB06 /* Build configuration list for PBXNativeTarget "NetInfoTests" */ = {
+		BC4DB9DE1D709253000DEB06 /* Build configuration list for PBXNativeTarget "NKNetInfoTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BC4DB9DF1D709253000DEB06 /* Debug */,
 				BC4DB9E01D709253000DEB06 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
 		};
-		"___RootConfs_" /* Build configuration list for PBXProject "NetInfo" */ = {
+		BC8C9B4E1D7446B1005AA4D5 /* Build configuration list for PBXNativeTarget "NKNetInfoTestApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC8C9B4C1D7446B1005AA4D5 /* Debug */,
+				BC8C9B4D1D7446B1005AA4D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		"___RootConfs_" /* Build configuration list for PBXProject "NKNetInfo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				"_______Debug_" /* Debug */,
@@ -395,7 +611,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		"_______Confs_NetInfo" /* Build configuration list for PBXNativeTarget "NetInfo" */ = {
+		"_______Confs_NetInfo" /* Build configuration list for PBXNativeTarget "NKNKNetInfo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				"___DebugConf_NetInfo" /* Debug */,
