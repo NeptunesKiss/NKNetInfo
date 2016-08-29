@@ -9,7 +9,7 @@
 import XCTest
 @testable import NKNetInfo
 
-class NetInfoTests: XCTestCase {
+class NKNetInfoTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
